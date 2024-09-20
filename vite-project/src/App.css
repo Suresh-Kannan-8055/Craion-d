@@ -1,0 +1,13 @@
+.app-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f6f6f6;
+  }
+  
+  .main-content {
+    flex: 1;
+    background-color: #f6f6f6;
+    border-left: 1px solid #ccc;
+    overflow: hidden;
+  }
+  
