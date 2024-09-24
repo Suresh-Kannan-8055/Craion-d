@@ -1,0 +1,66 @@
+.right-head{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding :2px 5px 0 0;
+    line-height: 0;
+}
+.right-head div{
+    display: flex;
+    margin-top: 10px;
+}
+.bill-display{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.right-button{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+.right-button .add-notes{
+    width: 99%;
+    text-align: center;
+    height: 60px;
+    padding: 10px 0;
+    border-top: 2px solid #ddd;
+}
+.right-button .add-notes div{
+    color: #333;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 0;
+    margin: auto;
+    width: 180px;
+    border-radius: 5px;
+    padding :5px 10px;
+}
+.right-button .payment-btns{
+    width: 99%;
+    text-align: center;
+    height: 90px;
+    padding: 20px 10px;
+    border-top: 2px solid #ddd;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    gap: 0x;
+    line-height: 0;
+}
+.right-button .order-btns{
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    padding: 13px 10px;
+    border-top: 2px solid #ddd;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    gap: 0x;
+    line-height: 0;
+}

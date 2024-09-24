@@ -18,7 +18,7 @@ const InputBox = ({
         sx={iconButtonSx}
         aria-label="search"
         onClick={onSearchClick}
-        style={{background:"none",border:"none",padding:"5px 0 0 10px"}}
+        style={{background:"none",border:"none",padding:"5px 0 0 10px",color:"#aaa"}}
       >
         {icon}
       </button>

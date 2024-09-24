@@ -1,15 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
-import Home from "./pages/home/home";
-import About from "./pages/About/about";
+import Shop from "./pages/Shop/shop";
+import Dashboard from "./pages/Dashboard/dashboard";
 import Content from "./pages/contact/contact";
 import Login from "./pages/login/login";
-import ProtectedRoute from "./router/privateRouter";
-import VNav from "./components/navbar/nav";
-import "./App.css"; // Import the CSS file
-
+import VNavbar from "./components/navbar/navbar";
+import "./App.css";
+import { useState } from "react";
 function App() {
+  const [isCollapsed, setIsCollapsed] = useState(true);
+
   const theme = createTheme({
     palette: {
       mode: "light",
@@ -23,15 +24,13 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className="app-container">
-        <VNav />
+        <VNavbar isCollapsed={isCollapsed} setIsCollapsed={setIsCollapsed}/>
         <div className="main-content">
           <Routes>
               <Route path="/login" element={<Login />} />
-              <Route element={<ProtectedRoute />}>
-                <Route path="/home" element={<Home />} />
-                <Route path="/about" element={<About />} />
+                <Route path="/dashBoard" element={<Dashboard />} />
+                <Route path="/shop" element={<Shop isCollapsed={isCollapsed} setIsCollapsed={setIsCollapsed}/>} />
                 <Route path="/content" element={<Content />} />
-              </Route>
           </Routes>
         </div>
       </div>

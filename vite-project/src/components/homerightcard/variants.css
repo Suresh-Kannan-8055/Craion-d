@@ -1,0 +1,125 @@
+.variants-head {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  line-height: 0;
+}
+.variants-display {
+  display: flex;
+  justify-content: space-between;
+}
+.variants-display .variants-card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px 10px;
+  box-shadow: none;
+  background: none;
+}
+.variants-img {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.variants-img .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius:10px ;
+}
+.variants-img .variant-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  width: 20px;
+  background-color: #47b5ff;
+  color: #fff;
+  height: 20px;
+  text-align: center;
+  font-size: 13px;
+}
+.variants-img .i-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  z-index: 1;
+}
+.variants-card .variant-name {
+  width: 70%;
+  margin-left: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+  margin-top: 15px;
+}
+.slide-btn {
+  display: flex;
+  margin: 20px auto;
+  border-radius: 7px;
+  overflow: hidden;
+  width: 95%;
+  background: none;
+  border: 2px solid #ddd;
+}
+
+.slide-btn input {
+  display: none;
+}
+
+.slide-btn label {
+  flex: 1;
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  background: transparent;
+}
+
+.slide-btn input[type="radio"]:checked + label {
+  background: #1263df;
+  color: white;
+  border-color: #1263df;
+}
+
+.slide-btn label:hover {
+  background-color: #eee;
+}
+.radio-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 58px;
+  border-bottom: 2px solid #ddd;
+  background: transparent;
+  transition: background-color 0.3s ease;
+}
+.variant-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+.variant-btn .variant-bottom-btn{
+    width: 100%;
+    text-align: center;
+    height: 115px;
+    padding: 20px 0px;
+    border-top: 2px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    gap: 0x;
+    line-height: 0;
+}
